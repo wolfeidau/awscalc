@@ -1,0 +1,30 @@
+!!!
+html(lang='en', ng-app)
+  head
+    include includes/head
+
+  body(data-spy='scroll', data-target=".productnav")
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          a.brand(href='/') awscalc
+          ul.nav
+            li.active
+              a(href="/") Home
+            li
+              a(href="/about") About
+
+    block content
+
+    block footer
+      .container-fluid
+        footer.page-footer
+          p &copy; 2013 Mark Wolfe
+          p hapi version #{hapiVersion} awscal version #{appVersion}
+
+
+    block scripts
+      script(src='/components/jquery/jquery.js')
+      script(src='/components/bootstrap/bootstrap.js')
+      script(src='/components/angular/angular.js')
+      script(src='/js/site.js')

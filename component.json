@@ -1,0 +1,10 @@
+{
+    "name":"awscalc",
+    "main":[
+        "./public/css/style.css",
+        "./public/js/site.js"
+    ],
+    "dependencies":{
+        "bootstrap":"~2.3.1"
+    }
+}

@@ -1,0 +1,64 @@
+extends layout
+
+block content
+  div(ng-controller='AppCtrl').container-fluid
+    header#overview.jumbotron.subhead
+      .row
+        .span6
+          h1 Home
+          p.lead= message
+    .row
+      .span3
+        div#productnav(data-spy='affix', data-offset-top='250').well.sub-nav-fixed.productnav
+          ul.nav.nav-list
+            li.nav-header Products
+            li.active
+              a(href='#ec2') EC2
+            li
+              a(href='#rds') RDS
+            li
+              a(href='#s3') s3
+
+      .span9
+        section#ec2
+          .page-header
+            h1 EC2
+          .row
+            .span12
+              .well
+                table.table
+                  thead
+                    tr
+                      th Type
+                      th Zone
+                      th Size
+                      th Price
+                  tbody
+                    tr
+                      td
+                      td
+                      td
+                      td
+
+        section#rds
+          .page-header
+            h1 RDS
+          .row
+            .span12
+              .well
+                h3 Pricing
+                h3 Pricing
+                h3 Pricing
+                h3 Pricing
+        section#s3
+          .page-header
+            h1 S3
+          .row
+            .span12
+              .well
+                h3 Pricing
+                h3 Pricing
+                h3 Pricing
+                h3 Pricing
+                h3 Pricing
+
